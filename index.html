@@ -1,0 +1,342 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>USER JOURNEY AMARANTOS</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font: normal 16px "Helvetica Neue", sans-serif;
+      color: gray;
+      overflow-x: hidden;
+      padding-bottom: 50px;
+	 background: rgb(180,227,145); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(180,227,145,1) 0%, rgba(97,196,25,1) 50%, rgba(180,227,145,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(180,227,145,1) 0%,rgba(97,196,25,1) 50%,rgba(180,227,145,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(180,227,145,1) 0%,rgba(97,196,25,1) 50%,rgba(180,227,145,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=1 );
+    }
+	
+
+    /* INTRO */
+	@font-face {
+    font-family: "Edwardian Script";
+    src: url(path/to/the/font);
+}
+	.text25 {
+	text-transform: uppercase;
+	background: linear-gradient(to right, #0000e6 0%, #95b2d0  100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font: {
+		size: 5vw;
+			};
+	}
+	.text24 {
+	text-transform: uppercase;
+	background: linear-gradient(to right, #cc0066 0%, #ff66b3  100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font: {
+		size: 5vw;
+			};
+	}
+	.text23 {
+	text-transform: uppercase;
+	background: linear-gradient(to right, #4d1933 0%, #f2d9e6  100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font: {
+		size: 3vw;
+			};
+	}
+	.nav_bar{
+	width: 100%;
+      margin: 0 auto;
+	height:200px;
+  text-align: center;
+   padding: 45px 10px;
+  
+   background: #e2e2e2; /* Old browsers */
+background: -moz-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 );
+	}
+
+    .intro {
+      padding: 0;
+    }
+
+    .container {
+      width: 100%;
+      
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    /* TIMELINE */
+
+    .timeline ul {
+      padding: 50px 0;
+    }
+
+    .timeline ul li {
+      list-style-type: none;
+      position: relative;
+      width: 6px;
+      margin: 0 auto;
+      padding-top: 50px;
+      background: gray;
+    }
+
+    .timeline ul li::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: inherit;
+    }
+
+    .timeline ul li > div {
+      position: relative;
+      bottom: 0;
+      width: 400px;
+      padding: 15px;
+      background: rgb(226,226,226); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=1 );
+      color: #EB5929;
+    }
+
+    .timeline ul li > div::before {
+      content: '';
+      position: absolute;
+      bottom: 7px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+
+    .timeline ul li:nth-child(odd) > div {
+      left: 45px;
+    }
+
+    .timeline ul li:nth-child(odd) > div::before {
+      left: -15px;
+      border-width: 8px 16px 8px 0;
+      border-color: transparent rgb(226,226,226) transparent transparent;
+    }
+
+    .timeline ul li:nth-child(even) > div {
+      left: -439px;
+    }
+
+    .timeline ul li:nth-child(even) > div::before {
+      right: -15px;
+      border-width: 8px 0 8px 16px;
+      border-color: transparent transparent transparent rgb(226,226,226);
+    }
+
+    h2 {
+      display: block;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    
+   
+    .image-wrapper {
+      margin-top: 8px;
+    }
+    .image-wrapper img {
+      width: 100%;
+    }
+
+    /* EFFECTS */
+
+    .timeline ul li::after {
+      transition: background .5s ease-in-out;
+    }
+
+    .timeline ul li.in-view::after {
+      background: rgb(226,226,226);
+    }
+
+    .timeline ul li > div {
+      visibility: hidden;
+      opacity: 0;
+      transition: all .5s ease-in-out;
+    }
+
+    .timeline ul li:nth-child(odd) > div {
+      transform: translate3d(200px, 0, 0);
+    }
+
+    .timeline ul li:nth-child(even) > div {
+      transform: translate3d(-200px, 0, 0);
+    }
+
+    .timeline ul li.in-view > div {
+      transform: none;
+      visibility: visible;
+      opacity: 1;
+    }
+
+    /* GENERAL MEDIA QUERIES */
+
+    @media only screen and (max-width: 900px) {
+      .timeline ul li > div {
+        width: 250px;
+      }
+      .timeline ul li:nth-child(even) > div {
+        left: -289px; /*250+45-6*/
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .timeline ul li {
+        margin-left: 20px;
+      }
+      .timeline ul li > div {
+        width: calc(100vw - 91px);
+      }
+      .timeline ul li:nth-child(even) > div {
+        left: 45px;
+      }
+      .timeline ul li:nth-child(even) > div::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent rgb(226,226,226) transparent transparent;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="intro">
+    <div class="container">
+	<div class="nav_bar">
+      <h1 class="text25">User Journey Amarantos</h1><br>
+	  <h3 class="text23"> Duration: 6 Month </h3>
+	 </div>
+	
+    </div>
+  </section>
+
+  <section class="timeline">
+     
+    <ul>
+	  <li>
+	      <div>
+		  <center>
+        
+		  <h2 class="text24">Apply & Shortlist</h2> 
+          <div class="image-wrapper">
+            
+          </div>
+		  
+		  </center>
+        </div>
+      </li>
+      <li>
+         <div>
+		  <center>
+          <h2 class="text24">Invite & Join</h2> 
+          <div class="image-wrapper">
+            
+          </div>
+		  </center>
+        </div>
+      </li>
+      <li>
+         <div>
+		  <center>
+          <h2 class="text24">Register</h2> 
+          <div class="image-wrapper">
+            
+          </div>
+		  </center>
+        </div>
+      </li>
+     <li>
+         <div>
+		  <center>
+          <h2 class="text24">Guided Preparation</h2> 
+          <div class="image-wrapper">
+            
+          </div>
+		  </center>
+        </div>
+      </li>
+      <li>
+        <div>
+		  <center>
+          <h2 class="text24">5-Day Workshop</h2> 
+          <div class="image-wrapper">
+            
+          </div>
+		  </center>
+        </div>
+      </li>
+      <li>
+         <div>
+		  <center>
+          <h2 class="text24">4-Month Practice</h2> 
+          <div class="image-wrapper">
+            
+          </div>
+		  </center>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+<script>
+  (function() {
+    'use strict';
+    var items = document.querySelectorAll(".timeline li");
+
+    // check if an element is in viewport
+    // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+    function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      // Check only top and bottom and consider the case that the post's height is longer than the window height
+      return (rect.bottom - 100 > 0 && rect.top + 100 < (window.innerHeight || document.documentElement.clientHeight));
+    }
+
+    function callbackFunction() {
+      for (var i = 0; i < items.length; i++) {
+        if (isElementInViewport(items[i])) {
+          items[i].classList.add("in-view");
+        }
+      }
+    }
+
+    window.addEventListener("load", callbackFunction);
+    window.addEventListener("resize", callbackFunction);
+    window.addEventListener("scroll", callbackFunction);
+  })();
+</script>
+
+</body>
+</html>
